@@ -1,0 +1,57 @@
+@import '~bootstrap/scss/bootstrap';
+
+header{
+  height: 60px;
+}
+
+.main-wrapper{
+  height: calc(100vh - 60px);
+
+  aside{
+    height: 100%;
+    width: 250px;
+    flex-shrink: 0;
+
+    nav{
+      ul{
+        list-style: none;
+        li{
+          margin-bottom: 10px;
+          a{
+            text-decoration: none;
+            color: white;
+            i{
+              margin-right: 5px;
+            }
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  main{
+    // debug
+    background-color: rgb(60, 190, 190);
+
+    #actions{
+      min-width: 200px;
+    }
+
+    span.badge.text-bg-violet{
+      background-color: #6e2cf2;
+    }
+
+    .modal-content{
+      background-color: #212529;
+      color: white;
+    }
+  }
+
+  .ck-editor__editable_inline{
+    height: 400px;
+  }
+}
